@@ -35,7 +35,7 @@
                 <FontImageSource FontFamily="icon"
                                  Glyph="&#xf110;"></FontImageSource>
             </Tab.Icon>
-            <ShellContent ContentTemplate="{DataTemplate local:CartPage}" />
+            <ShellContent ContentTemplate="{DataTemplate local:PinPage}" />
         </Tab>
         <Tab Title="Account">
             <Tab.Icon>
