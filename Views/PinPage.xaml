@@ -12,8 +12,10 @@
                     <x:Arguments>
                         <sensors:Location>
                             <x:Arguments>
-                                <x:Double>36.9628066</x:Double>
-                                <x:Double>-122.0194722</x:Double>
+                                <!-- <x:Double>36.9628066</x:Double>
+                                     <x:Double>-122.0194722</x:Double>   -->
+                                <x:Double>19.485164</x:Double>
+                                <x:Double>-99.149660</x:Double>
                             </x:Arguments>
                         </sensors:Location>
                         <x:Double>0.01</x:Double>
