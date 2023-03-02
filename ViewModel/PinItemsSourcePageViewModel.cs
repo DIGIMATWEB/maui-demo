@@ -80,7 +80,7 @@ public class PinItemsSourcePageViewModel
         return new Model.Position(
             $"Pin {_pinCreatedCount}",
             $"Desc {_pinCreatedCount}",
-            RandomPosition.Next(new Location(19.485164, -99.149660), 8, 19));//39.8283459, -98.5794797), 8, 19));
+            RandomPosition.Next(new Location(39.8283459, -98.5794797), 8, 19));
     }
 }
 
