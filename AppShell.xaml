@@ -28,7 +28,7 @@
                 <FontImageSource FontFamily="icon"
                                  Glyph="&#xf56e;"></FontImageSource>
             </Tab.Icon>
-            <ShellContent ContentTemplate="{DataTemplate local:HomePage}" />
+            <ShellContent ContentTemplate="{DataTemplate local:signature}" />
         </Tab>
          <Tab Title="firma">
             <Tab.Icon>
