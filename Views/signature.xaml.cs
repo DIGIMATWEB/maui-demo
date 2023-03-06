@@ -48,7 +48,7 @@ public partial class signature : ContentPage
             mediaScanIntent.SetData(Android.Net.Uri.FromFile(new Java.IO.File(path)));
             context.SendBroadcast(mediaScanIntent);
         }
-        Draw.Clear();
+        
 #elif IOS || MACCATALYST
         var image = new UIKit.UIImage(Foundation.NSData.FromArray(memoryStream.ToArray()));
         image.SaveToPhotosAlbum((image, error) =>
