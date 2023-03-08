@@ -68,6 +68,9 @@
 	  <MauiXaml Update="Views\CategoryDetail.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\signature.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\HomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -89,4 +92,10 @@
 	  <PackageReference Include="Microsoft.Maui.Controls.Maps" Version="7.0.49" />
 	  <PackageReference Include="CommunityToolkit.Maui" Version="5.0.0" />
 	</ItemGroup>
+	<PropertyGroup Condition ="$(TargetFramework.Contains('-android')) and '$(Configuration)' == 'Release'">
+		<AndroidSigningKeyStore>..\key.keystore</AndroidSigningKeyStore>
+		<AndroidSigningStorePass>newlands</AndroidSigningStorePass>
+		<AndroidSigningKeyAlias>MauiAlias</AndroidSigningKeyAlias>
+		<AndroidSigniningKeyPass>newlands</AndroidSigniningKeyPass>
+    </PropertyGroup>
 </Project>
