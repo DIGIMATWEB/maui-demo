@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell
+
+             x:Class="mauiTest.AppShell"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:mauiTest.Views"
+             Title="AppShell"
+             Shell.TabBarBackgroundColor ="White"
+             Shell.TabBarTitleColor="Green"
+             Shell.TabBarUnselectedColor="Black"
+             Shell.FlyoutBehavior="Disabled">
+                <TabBar>
+                    <Tab Title="Usuario">
+                        <Tab.Icon>
+                            <FontImageSource FontFamily="icon"
+                                             Glyph="&#xf56e;"></FontImageSource>
+                        </Tab.Icon>
+                        <ShellContent ContentTemplate="{DataTemplate local:Profile}" />
+                    </Tab>
+                    <Tab Title="Localizador
+                         ">
+                        <Tab.Icon>
+                            <FontImageSource FontFamily="icon"
+                                             Glyph="&#xf110;"></FontImageSource>
+                        </Tab.Icon>
+                        <ShellContent ContentTemplate="{DataTemplate local:PinPage}" />
+                     </Tab>
+                     <Tab Title="Validador">
+                        <Tab.Icon>
+                            <FontImageSource FontFamily="icon"
+                                             Glyph="&#xf56e;"></FontImageSource>
+                        </Tab.Icon>
+                        <ShellContent ContentTemplate="{DataTemplate local:HomePage}" />
+                    </Tab>
+                     <Tab Title="firma">
+                        <Tab.Icon>
+                            <FontImageSource FontFamily="icon"
+                                             Glyph="&#xf110;"></FontImageSource>
+                        </Tab.Icon>
+                        <ShellContent ContentTemplate="{DataTemplate local:Signature}" />
+                    </Tab>
+                    <!--<Tab Title="Account">
+                        <Tab.Icon>
+                            <FontImageSource FontFamily="icon"
+                                             Glyph="&#xf004;"></FontImageSource>
+                        </Tab.Icon>
+                        <ShellContent ContentTemplate="{DataTemplate local:HomePage}" />
+                    </Tab>-->
+    </TabBar>
+</Shell>
