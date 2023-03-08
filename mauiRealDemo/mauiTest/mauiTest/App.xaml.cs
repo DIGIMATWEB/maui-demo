@@ -7,7 +7,7 @@ public partial class App : Application
 		InitializeComponent();
 
 		MainPage = new AppShell();//MainPage();
-		//hola mundo
+		//hola mundo 
     }
 }
 
