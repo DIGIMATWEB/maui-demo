@@ -2,9 +2,11 @@
 
 public partial class MainPage : ContentPage
 {
-	public MainPage()
+   // int count = 0;
+    public MainPage()
 	{
 		InitializeComponent();
 	}
+	
 }
 

@@ -57,11 +57,12 @@
         <PackageReference Include="Microsoft.Maui.Controls.Maps" Version="7.0.59" />
         <PackageReference Include="CommunityToolkit.Maui" Version="5.0.0" />
     </ItemGroup>
-    <PropertyGroup Condition ="$(TargetFramework.Contains('-android')) and '$(Configuration)' == 'Release'">
+    <PropertyGroup Condition="$(TargetFramework.Contains('-android')) and '$(Configuration)' == 'Release'">
+        <AndroidKeyStore>True</AndroidKeyStore>
 		<AndroidSigningKeyStore>..\key.keystore</AndroidSigningKeyStore>
 		<AndroidSigningStorePass>newlands</AndroidSigningStorePass>
 		<AndroidSigningKeyAlias>MauiAlias</AndroidSigningKeyAlias>
-		<AndroidSigniningKeyPass>newlands</AndroidSigniningKeyPass>
+		<AndroidSigningKeyPass>newlands</AndroidSigningKeyPass>
     </PropertyGroup>
     <ItemGroup>
       <None Remove="Views\" />
