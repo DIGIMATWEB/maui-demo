@@ -16,28 +16,28 @@
             </Tab.Icon>
             <ShellContent ContentTemplate="{DataTemplate local:HomePage}" />
         </Tab>
-        <Tab Title="mapa">
+        <Tab Title="rv">
             <Tab.Icon>
                 <FontImageSource FontFamily="icon"
                                  Glyph="&#xf110;"></FontImageSource>
             </Tab.Icon>
             <ShellContent ContentTemplate="{DataTemplate local:CartPage}" />
         </Tab>
-         <Tab Title="scanner">
+         <Tab Title="firma">
             <Tab.Icon>
                 <FontImageSource FontFamily="icon"
                                  Glyph="&#xf56e;"></FontImageSource>
             </Tab.Icon>
             <ShellContent ContentTemplate="{DataTemplate local:signature}" />
         </Tab>
-         <Tab Title="firma">
+         <Tab Title="Mapa">
             <Tab.Icon>
                 <FontImageSource FontFamily="icon"
                                  Glyph="&#xf110;"></FontImageSource>
             </Tab.Icon>
             <ShellContent ContentTemplate="{DataTemplate local:PinPage}" />
         </Tab>
-        <Tab Title="Account">
+        <Tab Title="Perfil">
             <Tab.Icon>
                 <FontImageSource FontFamily="icon"
                                  Glyph="&#xf004;"></FontImageSource>
