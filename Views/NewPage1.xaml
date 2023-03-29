@@ -11,38 +11,42 @@
             </Grid.RowDefinitions>
             <Image Aspect="AspectFill" Source="dummy.png" />
             <Grid/>
-            <Grid ColumnDefinitions="*,*">
+            <Grid>
+
            <!--  <skia:SKLottieView
                     Grid.Column="1"
                     HeightRequest="100"
                     RepeatCount="-1"
                     Source="initialanimation.json" />-->
+                 <Label
+                    Margin="40,100,0,0"
+                            FontAttributes="Bold"
+                            FontFamily="bold"
+                            FontSize="Medium"
+                            Text="Hola!"
+                            TextColor="#2D2D2D" />
                 <Image
-                    Aspect="AspectFit"
+                    Margin="0,2,0,0"
+                    Aspect="Center"
                     HeightRequest="120"
                     Source="Images/logofhpng.png" />
             </Grid>
 
           
-                <Grid  Margin="0,300,0,0">
+                <Grid  Margin="0,350,0,0">
                     <VerticalStackLayout>
                        
-                        <Label
-                            FontAttributes="Bold"
-                            FontFamily="bold"
-                            FontSize="Medium"
-                            Text="Welcome!"
-                            TextColor="#2D2D2D" />
+                       
                         <Label
                             FontFamily="medium"
                             Text="Log in to continue"
                             TextColor="#A3A3A4" />
-                        <Grid Margin="0,30,0,0">
+                        <Grid Margin="20,30,0,0">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width=".2*" />
                                 <ColumnDefinition Width=".8*" />
                             </Grid.ColumnDefinitions>
-                            <Frame
+                          <!--  <Frame
                                 Padding="0"
                                 BackgroundColor="#EDEBF6"
                                 CornerRadius="10"
@@ -59,7 +63,7 @@
                                             Color="#4F3F9B" />
                                     </Image.Source>
                                 </Image>
-                            </Frame>
+                            </Frame>-->
                             <Entry
                                 Grid.Column="1"
                                 Placeholder="EMAIL"
@@ -70,7 +74,7 @@
                                 <ColumnDefinition Width=".2*" />
                                 <ColumnDefinition Width=".8*" />
                             </Grid.ColumnDefinitions>
-                            <Frame
+                           <!--   <Frame
                                 Padding="0"
                                 BackgroundColor="#EDEBF6"
                                 CornerRadius="10"
@@ -86,7 +90,7 @@
                                             Color="#4F3F9B" />
                                     </Image.Source>
                                 </Image>
-                            </Frame>
+                            </Frame>-->
                             <Entry
                                 Grid.Column="1"
                                 IsPassword="True"
@@ -95,18 +99,18 @@
                         </Grid>
                         <Button
                             x:Name="Login"
-                            Margin="0,20,0,0"
+                            Margin="20,20,20,0"
                             BackgroundColor="#4F3F9B"
                             Clicked="Login_Clicked"
                             HeightRequest="60"
                             Text="Login"
                             TextColor="#FBF6FD" />
                         <Label
-                            Margin="0,20,0,-10"
+                            Margin="20,20,20,-10"
                             HorizontalOptions="Center"
                             Text="Forgot your password?" />
                         <Button
-                            Margin="0,30,0,0"
+                            Margin="20,30,20,0"
                             BackgroundColor="#FBF6FD"
                             Clicked="CreateAccount_Clicked"
                             HeightRequest="60"
