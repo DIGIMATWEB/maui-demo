@@ -38,7 +38,7 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\packages.svg" Color="#FFFFFF" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -53,6 +53,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\icon.ttf" />
+	  <None Remove="Resources\Images\logofhpng.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -91,6 +92,9 @@
 	<ItemGroup>
 	  <PackageReference Include="Microsoft.Maui.Controls.Maps" Version="7.0.59" />
 	  <PackageReference Include="CommunityToolkit.Maui" Version="5.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Images\logofhpng.png" />
 	</ItemGroup>
 	<PropertyGroup Condition="$(TargetFramework.Contains('-android')) and '$(Configuration)' == 'Release'">
 		<AndroidSigningKeyStore>..\key.keystore</AndroidSigningKeyStore>

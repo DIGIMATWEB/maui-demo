@@ -5,29 +5,35 @@
              Title="NewPage1">
    <ScrollView>
         <Grid>
-            <Grid.RowDefinitions>
+           <!-- <Grid.RowDefinitions>
                 <RowDefinition Height=".3*" />
                 <RowDefinition Height=".7*" />
             </Grid.RowDefinitions>
             <Image Aspect="AspectFill" Source="dummy.png" />
             <Grid BackgroundColor="#4F3F9B" Opacity=".9" />
             <Grid ColumnDefinitions="*,*">
-              <!--  <skia:SKLottieView
+             <skia:SKLottieView
                     Grid.Column="1"
                     HeightRequest="100"
                     RepeatCount="-1"
-                    Source="initialanimation.json" />-->
+                    Source="initialanimation.json" />
                 <Image
                     Aspect="AspectFit"
                     HeightRequest="120"
                     Source="applogo.png" />
-            </Grid>
+            </Grid>-->
+           
+            
             <Frame
                 Grid.Row="1"
                 Margin="0,-30,0,0"
                 CornerRadius="25">
-                <Grid>
+                <Grid  Margin="0,400,0,0">
                     <VerticalStackLayout>
+                        <Image Aspect="AspectFill"
+                               HeightRequest="120"
+                               WidthRequest="120"
+                               Source="Images/logfh.png" />
                         <Label
                             FontAttributes="Bold"
                             FontFamily="bold"
