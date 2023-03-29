@@ -5,19 +5,13 @@
              Title="NewPage1">
    <ScrollView>
         <Grid>
-          <Grid.RowDefinitions>
+            <Grid.RowDefinitions>
                 <RowDefinition Height=".1*" />
                 <RowDefinition Height=".1*" />
             </Grid.RowDefinitions>
             <Image Aspect="AspectFill" Source="dummy.png" />
-            <Grid/>
-            <Grid>
-
-           <!--  <skia:SKLottieView
-                    Grid.Column="1"
-                    HeightRequest="100"
-                    RepeatCount="-1"
-                    Source="initialanimation.json" />-->
+           <Grid/>
+            <VerticalStackLayout>
                  <Label
                     Margin="40,100,0,0"
                             FontAttributes="Bold"
@@ -30,10 +24,14 @@
                     Aspect="Center"
                     HeightRequest="120"
                     Source="Images/logofhpng.png" />
-            </Grid>
-
+            </VerticalStackLayout>
+            <Frame
+                Grid.Row="1"
+                Margin="0,-30,0,0"
+                CornerRadius="1"
+                BorderColor="Transparent">
           
-                <Grid  Margin="20,350,20,0">
+            <Grid  Margin="20,20,20,10">
                     <VerticalStackLayout>
                        
                        
@@ -42,32 +40,11 @@
                             Text="Usuario"
                             TextColor="#A3A3A4" />
                         <Grid Margin="0,10,0,0">
-                           <!-- <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width=".2*" />
-                                <ColumnDefinition Width=".8*" />
-                            </Grid.ColumnDefinitions>-->
-                          <!--  <Frame
-                                Padding="0"
-                                BackgroundColor="#EDEBF6"
-                                CornerRadius="10"
-                                HeightRequest="60"
-                                HorizontalOptions="Center"
-                                VerticalOptions="Center"
-                                WidthRequest="60">
-                                <Image HorizontalOptions="Center">
-                                    <Image.Source>
-                                        <FontImageSource
-                                            FontFamily="AwesomeSolid"
-                                            Glyph="&#xf0e0;"
-                                            Size="44"
-                                            Color="#4F3F9B" />
-                                    </Image.Source>
-                                </Image>
-                            </Frame>-->
+                         
                             <Entry
                                 Grid.Column="1"
                                 Placeholder="Correo"
-                                 /><!-- text="dotnetbot@mauidelivery.com" -->
+                                 />
                         </Grid>
                         <Label
 
@@ -76,27 +53,6 @@
                                 Text="Contraseña"
                                 TextColor="#A3A3A4" />
                         <Grid Margin="0,10,0,0">
-                            <!--<Grid.ColumnDefinitions>
-                                <ColumnDefinition Width=".2*" />
-                                <ColumnDefinition Width=".8*" />
-                            </Grid.ColumnDefinitions>-->
-                           <!--   <Frame
-                                Padding="0"
-                                BackgroundColor="#EDEBF6"
-                                CornerRadius="10"
-                                HeightRequest="60"
-                                HorizontalOptions="Center"
-                                VerticalOptions="Center"
-                                WidthRequest="60">
-                                <Image HorizontalOptions="Center">
-                                    <Image.Source>
-                                        <FontImageSource
-                                            FontFamily="AwesomeSolid"
-                                            Glyph="&#xf084;"
-                                            Color="#4F3F9B" />
-                                    </Image.Source>
-                                </Image>
-                            </Frame>-->
                             <Entry
                                 Grid.Column="1"
                                 IsPassword="True"
@@ -118,7 +74,7 @@
                         </HorizontalStackLayout>
                     
                         <Button
-                            x:Name="Login"
+                            x:Name="LoginButton"       
                             Margin="0,20,0,0"
                             BackgroundColor="#4F3F9B"
                             Clicked="Login_Clicked"
@@ -126,16 +82,9 @@
                             Text="Iniciar Sesion"
                             TextColor="#FBF6FD" />
                         
-                        <!--<Button
-                            Margin="0,30,0,0"
-                            BackgroundColor="#FBF6FD"
-                            Clicked="CreateAccount_Clicked"
-                            HeightRequest="60"
-                            Text="Create your Account"
-                            TextColor="#4F3F9B" />-->
                     </VerticalStackLayout>
                 </Grid>
-            
+            </Frame>
         </Grid>
     </ScrollView>
 </ContentPage>
